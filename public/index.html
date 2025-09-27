@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Earthquake Map</title>
+
+    <!-- Leaflet CSS (needed for react-leaflet maps) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+
+    <style>
+      /* Ensures map + app take full page */
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Tooltip fix: always float above navbar */
+      .leaflet-tooltip.custom-tooltip {
+        z-index: 3000 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script>
+      // Example inline JS
+      window.onload = function () {
+        console.log("index.html loaded. React app will mount in #root.");
+      };
+    </script>
+  </body>
+</html>
